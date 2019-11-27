@@ -1,0 +1,11 @@
+<form class="example-form" [formGroup]="loginForm">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Login" formControlName="login" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Password" formControlName = "password" required>
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="signIn()">Primary</button>
+</form>
