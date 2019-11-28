@@ -17,6 +17,8 @@ export class ProfileComponent implements OnInit {
     password: new FormControl(),
     account : new FormControl()
   });
+  user: any;
+  account: any;
 
   ngOnInit() {
   }
