@@ -13,13 +13,13 @@ export class LoginComponent{
   constructor(private httpClient: HttpClient,
               private router: Router) { }
   loginForm = new FormGroup({
-    login: new FormControl(),
+    name: new FormControl(),
     password: new FormControl()
   });
 
   signIn() {
     const body = {
-    name : this.loginForm.controls.login.value,
+    name : this.loginForm.controls.name.value,
     password : this.loginForm.controls.password.value,
     };
 
