@@ -11,7 +11,7 @@ import {FormControl, FormGroup} from "@angular/forms";
 export class LoginComponent{
 
   constructor(private httpClient: HttpClient,
-              private router: Router) { }
+                 private router: Router) { }
   loginForm = new FormGroup({
     name: new FormControl(),
     password: new FormControl()
@@ -25,7 +25,7 @@ export class LoginComponent{
 
     this.httpClient.post<any>('http://localhost:8080/bankList', body).subscribe(success => {
       alert('Success login');
-      this.router.navigate(['/login']);
+      this.router.navigate(['/profile']);
     }, error => alert('Неверный пароль или логин'));
   }
 

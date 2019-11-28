@@ -1,1 +1,33 @@
-<p>profile works!</p>
+<form [formGroup]="profileForm">
+
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>add</mat-icon>
+    <span>Пополнение счёта</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>take</mat-icon>
+    <span>Снятие денег</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>send</mat-icon>
+    <span>Перевод средств</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>close</mat-icon>
+    <span>Закрытие счёта</span>
+  </button>
+</mat-menu>
+
+<mat-list>
+  <mat-list-item>Item 1</mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>Item 2</mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item>Item 3</mat-list-item>
+</mat-list>
+
+</form>

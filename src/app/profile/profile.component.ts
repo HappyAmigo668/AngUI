@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient,
+              private router: Router) { }
+  profileForm = new FormGroup({
+    name: new FormControl(),
+    password: new FormControl(),
+    account : new FormControl()
+  });
 
   ngOnInit() {
   }

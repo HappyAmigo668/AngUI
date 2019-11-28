@@ -10,6 +10,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 // @ts-ignore
 import {MatButtonModule} from '@angular/material/button';
 import { ProfileComponent } from './profile/profile.component';
+import {MatMenuModule} from "@angular/material/menu";
+import {MatIconModule} from "@angular/material/icon";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { ProfileComponent } from './profile/profile.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
